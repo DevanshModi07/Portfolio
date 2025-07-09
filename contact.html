@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
   <title>Contact Me</title>
 </head>
 
@@ -26,24 +30,16 @@
       </div>
       <ul class="menu-nav">
         <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
+          <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
+          <a href="about.html" class="nav-link">About Me</a>
         </li>
         <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            My Work
-          </a>
+          <a href="work.html" class="nav-link">My Work</a>
         </li>
         <li class="nav-item current">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
         </li>
       </ul>
     </nav>
@@ -54,9 +50,7 @@
       Contact
       <span class="text-secondary">Me</span>
     </h1>
-    <h2 class="sm-heading">
-      This is how you can reach me...
-    </h2>
+    <h2 class="sm-heading">This is how you can reach me...</h2>
     <div class="boxes">
       <div>
         <span class="text-secondary">Email: </span> dm.modi2000@gmail.com
@@ -70,11 +64,65 @@
     </div>
   </main>
 
-  <footer id="main-footer">
-    Copyright &copy; 2022 @Devansh Sahu
-  </footer>
+  <footer id="main-footer">Copyright &copy; 2022 @Devansh Sahu</footer>
 
   <script src="js/main.js"></script>
+
+  <style>
+    /* Add responsive styles for contact page */
+
+    /* On smaller screens, stack boxes vertically & center text */
+    @media screen and (max-width: 768px) {
+      main#contact {
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      .boxes > div {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+        border: 3px solid #97e756;
+        border-radius: 5px;
+        background: #373737;
+        font-size: 1.2rem;
+      }
+
+      main#contact h1.lg-heading {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      main#contact h2.sm-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+      }
+    }
+
+    /* Extra small devices */
+    @media screen and (max-width: 500px) {
+      main#contact h1.lg-heading {
+        font-size: 2.8rem;
+      }
+
+      main#contact h2.sm-heading {
+        font-size: 1.2rem;
+      }
+
+      .boxes > div {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+    }
+  </style>
 </body>
 
 </html>
